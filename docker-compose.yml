@@ -1,0 +1,35 @@
+# docker-compose.yml
+services:
+  training:
+    build: .
+    container_name: sales-training
+    volumes:
+      - ./data:/app/data
+      - ./model:/app/model
+      - ./src:/app/src
+    command: python src/train.py
+
+  backend:
+    build: .
+    container_name: sales-backend-api
+    depends_on:
+      - training
+    volumes:
+      - ./model:/app/model
+      - ./src:/app/src
+    ports:
+      - "8000:8000"
+    command: uvicorn api:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build: .
+    container_name: sales-frontend-app
+    depends_on:
+      - backend
+    volumes:
+      - ./src:/app/src # We only need src for the TARGET_COLUMN config
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_URL=http://backend:8000
+    command: streamlit run app.py --server.port 8501 --server.address 0.0.0.0
