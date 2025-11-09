@@ -135,7 +135,7 @@ If you prefer not to use Docker, follow these steps.
     - **Streamlit Dashboard**: `http://localhost:8501`
     - **FastAPI Backend (API Docs)**: `http://localhost:8000/docs`
 
-## 📲 How to Use the Application
+##  How to Use the Application
 
 The primary way to interact with the model is through the Streamlit web dashboard.
 
@@ -155,3 +155,10 @@ For programmatic access, you can send a `POST` request directly to the FastAPI e
 -   **Endpoint**: `/predict`
 -   **Method**: `POST`
 -   **Body**: `multipart/form-data` with a `file` key containing your `.csv` or `.xlsx` file.
+
+
+## Web Application Demo
+
+Below is a brief demonstration of the Streamlit dashboard. The demo shows how a user can upload a test data file, viewing the sales predictions in a table, visualizing the results for a specific store, and downloading the output.
+
+![Web App Demo](https://raw.githubusercontent.com/OussamaLafdil/Yoobic_ML_Test/assets//Démo_UI.mp4)
