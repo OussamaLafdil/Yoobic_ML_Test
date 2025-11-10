@@ -69,8 +69,8 @@ This is the simplest way to get the entire application running.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://https://github.com/OussamaLafdil/Yoobic_ML_Test
-    cd YOOBIC_TEST
+    git clone https://github.com/OussamaLafdil/Yoobic_ML_Test
+    cd Yoobic_ML_Test
     ```
 
 2.  **Build and run the services:**
@@ -93,8 +93,8 @@ If you prefer not to use Docker, follow these steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
-    cd YOOBIC_TEST
+    git clone https://github.com/OussamaLafdil/Yoobic_ML_Test
+    cd Yoobic_ML_Test
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -160,5 +160,4 @@ For programmatic access, you can send a `POST` request directly to the FastAPI e
 ## Web Application Demo
 
 Below is a brief demonstration of the Streamlit dashboard. The demo shows how a user can upload a test data file, viewing the sales predictions in a table, visualizing the results for a specific store, and downloading the output.
-
-![Web App Demo](https://raw.githubusercontent.com/OussamaLafdil/Yoobic_ML_Test/assets//Démo_UI.mp4)
+![Web App Demo](https://github.com/user-attachments/assets/edd5e7ee-f72d-4b0b-91e1-314045a7de06)
