@@ -70,7 +70,7 @@ This is the simplest way to get the entire application running.
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/OussamaLafdil/Yoobic_ML_Test
-    cd YOOBIC_TEST
+    cd Yoobic_ML_Test
     ```
 
 2.  **Build and run the services:**
@@ -93,8 +93,8 @@ If you prefer not to use Docker, follow these steps.
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
-    cd YOOBIC_TEST
+    git clone https://github.com/OussamaLafdil/Yoobic_ML_Test
+    cd Yoobic_ML_Test
     ```
 
 2.  **Create and activate a virtual environment:**
