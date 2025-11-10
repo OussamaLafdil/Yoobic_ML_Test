@@ -69,7 +69,7 @@ This is the simplest way to get the entire application running.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://https://github.com/OussamaLafdil/Yoobic_ML_Test
+    git clone https://github.com/OussamaLafdil/Yoobic_ML_Test
     cd YOOBIC_TEST
     ```
 
